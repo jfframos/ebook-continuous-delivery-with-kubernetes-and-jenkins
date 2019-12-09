@@ -60,7 +60,7 @@ podTemplate(
 
           echo '*****'
           pwd
-          ls -lf notepad/k8s/testing
+          ls -l notepad/k8s/testing
           cat ./notepad/k8s/testing/notepad-testing-deployment.yaml
           echo '*****'
           kubectl apply --validate=false -f notepad/k8s/testing/ -l app=mysql
