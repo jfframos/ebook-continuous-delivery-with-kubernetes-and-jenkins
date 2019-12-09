@@ -24,6 +24,7 @@ podTemplate(label: 'testing',
 
     dir('app') {
       stage('Checkout the Notepad application') {
+        sleep 15
         git url: 'https://github.com/jfframos/notepad.git', branch: "${GIT_BRANCH}"
       }
 
