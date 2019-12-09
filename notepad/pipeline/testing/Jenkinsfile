@@ -20,11 +20,11 @@ podTemplate(label: 'testing',
   node ('testing') {
     def image_name = "notepad"
 
+    sleep 30
     checkout scm
 
     dir('app') {
       stage('Checkout the Notepad application') {
-        sleep 15
         git url: 'https://github.com/jfframos/notepad.git', branch: "${GIT_BRANCH}"
       }
 
